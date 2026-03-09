@@ -29,4 +29,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true # 
-          tags: your-dockerhub-username/ci-sum-python:${{ github.sha }} #
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ci-sum-python:${{ github.sha }} #
